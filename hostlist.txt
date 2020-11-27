@@ -1,0 +1,15 @@
+hostname;ipaddress;interface;groups;templates
+# 1st row is header, do not change!
+#
+# 1st field: name of the host (unique)
+# 2nd field: ip address of the host
+# 3rd field: interface type, use "snmp" if host uses SNMP, otherwise leave empty
+# 4th field: hostgroups where this host is about to belong (multiple groups are separated by comma, new groups are created automatically)
+# 5th filed: templates linked to this host (multiple templates are separated by comma)
+#
+# SMTP servers for switchover
+#SMTP primary;192.168.0.20;;SMTP servers;SMTP Service
+#SMTP secondary;192.168.0.21;;SMTP servers;SMTP Service
+# Example hosts
+#host1;192.168.0.1;;groupA,groupX;Template App FTP Service,Template App HTTP Service,Template App HTTPS Service
+#host2;192.168.0.2;snmp;groupA,groupX;Template App HTTP Service,Template App HTTPS Service

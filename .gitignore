@@ -1,0 +1,5 @@
+# Ignore folders:
+__pycache__/
+.vscode/
+*test*
+*old*
